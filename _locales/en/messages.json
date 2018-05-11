@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Memefy This",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "The Ultimate Meme Machine where you can makes memes instantly on any online picture.",
+    "description": "The description of the application"
+  }
+}

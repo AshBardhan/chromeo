@@ -1,0 +1,44 @@
+{
+  "name": "Chromeo",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "The Ultimate Web Browser Content Protector",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "background": {
+    "scripts" : [
+      "src/background/main.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "file:///*/*"],
+      "css": [
+        "src/content_scripts/inject.css"
+      ],
+      "js": [
+        "src/content_scripts/inject.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "<all_urls>",
+    "contextMenus",
+    "tabCapture"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/icon19.png",
+      "38": "icons/icon38.png"
+    },
+    "default_title": "Chromeo",
+    "default_popup": "src/popup.html"
+  }
+}

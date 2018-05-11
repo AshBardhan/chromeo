@@ -1,0 +1,31 @@
+{
+  "name": "chromeo",
+  "version": "0.0.1",
+  "description": "The Ultimate Web Browser Content Protector",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-zip": "^0.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshBardhan/chromeo.git"
+  },
+  "keywords": [
+    "security",
+    "hackathon",
+    "privacy",
+    "confidentiality"
+  ],
+  "author": "AshBardhan<ashbardhan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AshBardhan/chromeo/issues"
+  },
+  "homepage": "https://ashbardhan.github.io/chromeo"
+}
